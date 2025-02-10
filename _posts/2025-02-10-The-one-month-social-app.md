@@ -22,7 +22,7 @@ I started looking for the fastest way to set up a backend and came across Parse,
 
 While exploring it, I decided to speed things up even more by dockerizing everything in one YAML file.
 
-```YAML
+```yaml
 services:
   mongo:
     image: mongo:latest
