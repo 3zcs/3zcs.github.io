@@ -9,7 +9,6 @@ tags: [software development]
 pin: true
 ---
 
-
 # The one month social app
 
 I've been posting about my short weekend trips on Instagram for the past month, and then I thought—what if I let my friends suggest ideas for my and there weekend adventures? The idea came from the fact that I have a job and a family, but I also want to travel and have fun.
@@ -22,6 +21,7 @@ Now, I want to build this app, but since it’s a social app, it’s going to ta
 I started looking for the fastest way to set up a backend and came across Parse, which is a Backend-as-a-Service (BaaS). It turned out to be the perfect solution for quickly building an app.
 
 While exploring it, I decided to speed things up even more by dockerizing everything in one YAML file.
+
 ```YAML
 services:
   mongo:
