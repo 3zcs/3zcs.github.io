@@ -9,7 +9,7 @@ tags: [software development]
 pin: true
 ---
 
-# The one month social app
+## The one month social app
 
 I've been posting about my short weekend trips on Instagram for the past month, and then I thought—what if I let my friends suggest ideas for my and there weekend adventures? The idea came from the fact that I have a job and a family, but I also want to travel and have fun.
 
@@ -64,7 +64,6 @@ services:
 volumes:
   mongo-data:
   config-vol:
-
 ```
 
  With that, I can literally spin up the whole backend (MongoDB and Parse Server) with just one click. I’ll add more improvements later.
