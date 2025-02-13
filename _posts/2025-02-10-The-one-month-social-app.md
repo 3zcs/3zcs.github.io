@@ -80,3 +80,17 @@ When it came to UI/UX, I’m not an expert, so I went straight to [websites](htt
 For icons and images, I found several [websites](https://www.svgrepo.com/) that provide [themed assets](https://www.flaticon.com/stickers-pack/essentials-166), which was super helpful for UI design. The key is knowing what fits your app’s look. Sometimes, you have to try an icon or image, realize it doesn’t match, and keep searching for a better one.
 
 Building an app is an iterative process. You might have a rough idea of how everything should look, but as you work on it, things become clearer. So, don’t overthink it—just start, and as you go, you’ll get a better vision of your project!
+
+
+## **Landing Page**  
+
+I was looking for a landing page that required minimal editing, and I came across **[Sandoche](https://github.com/sandoche/Mobile-app-landingpage-template)**—a beautiful and simple landing page template.  
+
+While building the page, I encountered a few issues. To make deployment easier, I **forked** the project, **Dockerized** it, and used it. You can find the **Dockerized version** along with instructions on how to build and use it [here](https://github.com/3zcs/Mobile-app-landingpage-template/tree/dockrize).  
+
+---
+
+## **Before You Leave**  
+
+- You can check out the app **[Oweekn](https://oweekn.netlify.app/)**.  
+- I also wrote another blog post about the **security aspects of this app**, which you can find [here](/_posts/2025-02-13-flutter-parse-stack-under-security-lens.md).  
