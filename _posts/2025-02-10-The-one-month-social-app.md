@@ -93,4 +93,4 @@ While building the page, I encountered a few issues. To make deployment easier, 
 ## **Before You Leave**  
 
 - You can check out the app **[Oweekn](https://oweekn.netlify.app/)**.  
-- I also wrote another blog post about the **security aspects of this app**, which you can find [here](/posts/2025-02-13-flutter-parse-stack-under-security-lens.md).  
+- I also wrote another blog post about the **security aspects of this app**, which you can find  

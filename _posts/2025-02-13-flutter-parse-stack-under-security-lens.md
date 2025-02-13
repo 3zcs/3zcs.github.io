@@ -85,7 +85,7 @@ I tried several pre-built tools, but none provided reliable results—until I ca
 
 Once I hooked the app using `frida-flutterproxy`, the communication between the client and server started appearing in **cleartext**.  
 
-> ⚠️ **Note:** You need a **rooted device** to use this method. I previously wrote about achieving **silent root through an N-day vulnerability** [here](/posts/2024-07-07-rooting-through-n-day.md).  
+> ⚠️ **Note:** You need a **rooted device** to use this method. I previously wrote about achieving **silent root through an N-day vulnerability** .  
 
 ![Interception](/assets/img/parse-burp.png)  
 *Network communication intercepted using BurpSuite.
