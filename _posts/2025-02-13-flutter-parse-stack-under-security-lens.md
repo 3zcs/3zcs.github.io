@@ -203,6 +203,73 @@ Parse.Cloud.beforeSave("Post", async (request) => {
 ```
 This function ensures that **only the logged-in user** can create posts under their name. If an attacker **intercepts a request** and **modifies the creator name**, the backend will **reject the request**.  
 
+### **Implementing Security Layers in Parse**  
+
+By leveraging **Parse's security mechanisms**, we can **enforce a strong security model** for our app. For example, we can create a **Cloud Function** that **automatically sets ACLs** for users and **disables all Class-Level Permissions (CLPs)** to prevent unauthorized access.  
+
+### **Cloud Function: Enforcing ACL and Restricting Access**  
+
+```javascript
+Parse.Cloud.beforeSave("Posts", async (request) => {
+    const post = request.object;
+    const user = request.user;
+
+    if (!user) {
+        throw "Unauthorized: You must be logged in to create a post.";
+    }
+
+    // ✅ Set ACL for new posts
+    if (!post.existed()) {
+        const acl = new Parse.ACL(user);
+        
+        acl.setReadAccess(user, true);  // ✅ Creator can read
+        acl.setWriteAccess(user, true); // ✅ Creator can edit
+        
+        acl.setRoleReadAccess("admin", true);  // ✅ Admins can read
+        acl.setRoleWriteAccess("admin", true); // ✅ Admins can delete
+        
+        post.setACL(acl);
+        post.set("createdBy", user.id); // ✅ Save creator's ID for reference
+    } else {
+        // ✅ Prevent users from modifying posts they don’t own
+        if (post.get("createdBy") !== user.id && !isAdmin(user)) {
+            throw "Unauthorized: You can only edit your own posts.";
+        }
+    }
+});
+
+// ✅ Function to check if user is an admin
+function isAdmin(user) {
+    return user.get("role") === "admin";  // ✅ Modify based on your role system
+}
+
+// ✅ Ensure only Admin or Creator can delete posts
+Parse.Cloud.beforeDelete("Posts", async (request) => {
+    const post = request.object;
+    const user = request.user;
+
+    if (!user) {
+        throw "Unauthorized: You must be logged in to delete this post.";
+    }
+
+    // ✅ Only allow the creator or an admin to delete
+    if (post.get("createdBy") !== user.id && !isAdmin(user)) {
+        throw "Unauthorized: Only the creator or an admin can delete this post.";
+    }
+});
+```
+### **Security Breakdown**  
+
+- ✅ **Restrict Post Creation:** Only logged-in users can create posts.  
+- ✅ **Apply ACL Automatically:** The post creator gets full read/write access.  
+- ✅ **Restrict Editing:** Users can only modify their own posts (unless they're admins).  
+- ✅ **Restrict Deletion:** Only the post creator or an admin can delete posts.  
+- ✅ **Disable CLPs:** All table-level permissions are locked, with access controlled via ACLs and Cloud Functions.  
+
+By applying these **security layers**, we ensure that **Parse does not expose sensitive data** while still allowing **controlled access** for users and admins.  
+
+With this approach, we **fully utilize Parse's security features** to **secure part of the app**. The **same security strategy** should be applied to **every component** to ensure comprehensive protection.  
+
 ---
 
 ## **Final Thoughts**  
