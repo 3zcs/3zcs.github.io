@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>3zcs blog moved to tech.3zcs.me</title>
+<noscript><meta http-equiv="refresh" content="0; url=https://tech.3zcs.me/en/"></noscript>
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/assets/img/icon.png">
+<style>body{font:18px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;max-width:40rem;margin:4rem auto;padding:0 1rem;color:#222;background:#fff}a{color:#0b63c4;overflow-wrap:anywhere}@media (prefers-color-scheme:dark){body{color:#ddd;background:#1b1b1e}a{color:#6cb4ff}}</style>
+</head>
+<body>
+<main>
+<h1>This blog moved</h1>
+<p>This blog moved to <a id="to" href="https://tech.3zcs.me/en/">https://tech.3zcs.me/en/</a></p>
+</main>
+<script>
+(function () {
+  var slugs = {
+  "does-the-engine-matter": "https://tech.3zcs.me/en/does-the-engine-matter/",
+  "flutter-parse-stack-under-security-lens": "https://tech.3zcs.me/en/flutter-parse-stack-under-security-lens/",
+  "the-one-month-social-app": "https://tech.3zcs.me/en/the-one-month-social-app/",
+  "build-sqlite-for-android": "https://tech.3zcs.me/en/build-sqlite-for-android/",
+  "obtaining-my-driving-data": "https://tech.3zcs.me/en/obtaining-my-driving-data/",
+  "rooting-through-n-day": "https://tech.3zcs.me/en/rooting-through-n-day/"
+};
+  var path = location.pathname.toLowerCase()
+    .replace(/\/index\.html?$/, "").replace(/\.html?$/, "").replace(/\/+$/, "");
+  var to = slugs[path.slice(path.lastIndexOf("/") + 1)] || "https://tech.3zcs.me/en/";
+  var link = document.getElementById("to");
+  link.href = to;
+  link.textContent = to;
+  location.replace(to);
+})();
+</script>
+</body>
+</html>

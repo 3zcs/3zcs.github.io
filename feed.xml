@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://3zcs.github.io/</id>
+  <title>3zcs blog (moved to tech.3zcs.me)</title>
+  <subtitle>This blog moved to https://tech.3zcs.me/en/</subtitle>
+  <updated>2026-11-27T12:00:00+00:00</updated>
+  <author><name>3zcs</name><uri>https://tech.3zcs.me/en/</uri></author>
+  <link rel="self" type="application/atom+xml" href="https://3zcs.github.io/feed.xml"/>
+  <link rel="alternate" type="text/html" href="https://tech.3zcs.me/en/"/>
+  <entry>
+    <id>tag:3zcs.github.io,2026-11-27:moved-to-tech</id>
+    <title>This blog moved to tech.3zcs.me</title>
+    <link rel="alternate" type="text/html" href="https://tech.3zcs.me/en/"/>
+    <published>2026-11-27T12:00:00+00:00</published>
+    <updated>2026-11-27T12:00:00+00:00</updated>
+    <summary>This blog moved to https://tech.3zcs.me/en/. Every post is there now; please follow the new blog for new posts.</summary>
+  </entry>
+  <entry>
+    <id>https://3zcs.github.io/posts/does-the-engine-matter/</id>
+    <title>Does the engine matter for local LLM speed on a Mac?</title>
+    <link rel="alternate" type="text/html" href="https://tech.3zcs.me/en/does-the-engine-matter/"/>
+    <published>2026-11-27T13:45:00+00:00</published>
+    <updated>2026-11-27T13:51:20+00:00</updated>
+    <summary>This post moved to https://tech.3zcs.me/en/does-the-engine-matter/</summary>
+  </entry>
+  <entry>
+    <id>https://3zcs.github.io/posts/flutter-parse-stack-under-security-lens/</id>
+    <title>Flutter-parse stack under security lens</title>
+    <link rel="alternate" type="text/html" href="https://tech.3zcs.me/en/flutter-parse-stack-under-security-lens/"/>
+    <published>2025-02-10T12:55:00+00:00</published>
+    <updated>2025-02-14T05:32:40+00:00</updated>
+    <summary>This post moved to https://tech.3zcs.me/en/flutter-parse-stack-under-security-lens/</summary>
+  </entry>
+  <entry>
+    <id>https://3zcs.github.io/posts/The-one-month-social-app/</id>
+    <title>The one-month social app</title>
+    <link rel="alternate" type="text/html" href="https://tech.3zcs.me/en/the-one-month-social-app/"/>
+    <published>2025-02-10T12:55:00+00:00</published>
+    <updated>2025-02-13T16:24:25+00:00</updated>
+    <summary>This post moved to https://tech.3zcs.me/en/the-one-month-social-app/</summary>
+  </entry>
+  <entry>
+    <id>https://3zcs.github.io/posts/Build-sqlite-for-Android/</id>
+    <title>Build Sqlite for Android</title>
+    <link rel="alternate" type="text/html" href="https://tech.3zcs.me/en/build-sqlite-for-android/"/>
+    <published>2024-09-09T12:55:00+00:00</published>
+    <updated>2024-09-09T12:55:00+00:00</updated>
+    <summary>This post moved to https://tech.3zcs.me/en/build-sqlite-for-android/</summary>
+  </entry>
+  <entry>
+    <id>https://3zcs.github.io/posts/obtaining-my-driving-data/</id>
+    <title>Obtaining my driving data</title>
+    <link rel="alternate" type="text/html" href="https://tech.3zcs.me/en/obtaining-my-driving-data/"/>
+    <published>2024-08-09T12:55:00+00:00</published>
+    <updated>2024-08-09T12:55:00+00:00</updated>
+    <summary>This post moved to https://tech.3zcs.me/en/obtaining-my-driving-data/</summary>
+  </entry>
+  <entry>
+    <id>https://3zcs.github.io/posts/rooting-through-n-day/</id>
+    <title>Android Hidden Root through N-day</title>
+    <link rel="alternate" type="text/html" href="https://tech.3zcs.me/en/rooting-through-n-day/"/>
+    <published>2024-07-07T12:55:00+00:00</published>
+    <updated>2024-07-07T12:55:00+00:00</updated>
+    <summary>This post moved to https://tech.3zcs.me/en/rooting-through-n-day/</summary>
+  </entry>
+</feed>
