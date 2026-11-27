@@ -7,6 +7,7 @@ author: 3zcs
 date: 2026-11-27 16:45:00 +0300
 categories: [AI]
 tags: [llm, local llm, mlx, ollama, lm studio, mac, benchmark]
+pin: true
 ---
 
 In an attempt to use LLMs on my own computer (a Mac) without sharing files on the internet, I tried
